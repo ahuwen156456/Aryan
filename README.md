@@ -1,2 +1,2 @@
-# Aryan
-d
+Day Classes
+When Tradition Meets Transformation
