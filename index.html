@@ -36,7 +36,6 @@ z-index:1000;
 
 header h1{
 font-size:22px;
-font-weight:600;
 letter-spacing:2px;
 }
 
@@ -52,15 +51,16 @@ color:#fff;
 border-bottom:2px solid #fff;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero{
 height:100vh;
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
-position:relative;
+flex-direction:column;
 background:url('https://images.unsplash.com/photo-1506126613408-eca07ce68773') no-repeat center/cover;
+position:relative;
+text-align:center;
 }
 
 .hero::after{
@@ -76,7 +76,6 @@ left:0;
 .hero-content{
 position:relative;
 z-index:2;
-text-align:center;
 }
 
 .loop-container{
@@ -90,19 +89,18 @@ margin-bottom:20px;
 display:inline-block;
 font-size:60px;
 font-weight:700;
-animation:loop 35s linear infinite;
-text-shadow:0 0 20px #fff, 0 0 40px #aaa;
+animation:loop 30s linear infinite;
+text-shadow:0 0 20px #fff;
 }
 
 @keyframes loop{
-0%{ transform:translateX(100%); }
-100%{ transform:translateX(-100%); }
+0%{transform:translateX(100%);}
+100%{transform:translateX(-100%);}
 }
 
 .hero p{
-font-size:20px;
 color:#ccc;
-margin-bottom:30px;
+margin-bottom:20px;
 }
 
 .btn{
@@ -111,15 +109,14 @@ background:#fff;
 color:#000;
 border:none;
 border-radius:30px;
-font-weight:600;
 cursor:pointer;
-transition:0.4s;
+transition:0.3s;
 text-decoration:none;
 }
 
 .btn:hover{
-transform:scale(1.1);
 background:#ccc;
+transform:scale(1.1);
 }
 
 /* SECTIONS */
@@ -139,8 +136,8 @@ margin-top:40px;
 background:#1a1a1a;
 padding:30px;
 border-radius:15px;
-transition:0.4s;
 box-shadow:0 0 20px rgba(255,255,255,0.1);
+transition:0.3s;
 }
 
 .card:hover{
@@ -170,16 +167,9 @@ outline:none;
 box-shadow:0 0 10px #fff;
 }
 
-/* CONTACT */
-.contact-box{
-margin-top:30px;
-line-height:1.8;
-color:#ccc;
-}
-
 footer{
 background:#000;
-padding:30px;
+padding:20px;
 text-align:center;
 color:#aaa;
 }
@@ -206,48 +196,33 @@ font-size:35px;
 
 <section class="hero">
 <div class="hero-content">
-
 <div class="loop-container">
 <div class="loop-text">DAY CLASSES • DAY CLASSES • DAY CLASSES • DAY CLASSES •</div>
 </div>
-
 <p>Where Tradition Meets Transformation</p>
 <a href="#register" class="btn">Register Now</a>
-
 </div>
 </section>
 
 <section id="about">
 <h2>About Us</h2>
-<p>Day Classes provides professional training in Yoga, Kathak, Rajasthani Folk Dance and Aerobics. We combine culture, fitness and confidence building.</p>
+<p>We provide Yoga, Kathak, Rajasthani Folk Dance and Aerobics training with professional guidance.</p>
 </section>
 
 <section id="classes">
 <h2>Our Programs</h2>
 <div class="card-container">
-<div class="card">
-<h3>🧘 Yoga</h3>
-<p>Improve flexibility and inner peace.</p>
-</div>
-<div class="card">
-<h3>💃 Kathak</h3>
-<p>Classical rhythm and graceful expression.</p>
-</div>
-<div class="card">
-<h3>👗 Rajasthani Folk</h3>
-<p>Traditional vibrant cultural dance.</p>
-</div>
-<div class="card">
-<h3>🏃 Aerobics</h3>
-<p>Energetic workouts for strength.</p>
-</div>
+<div class="card"><h3>🧘 Yoga</h3><p>Improve flexibility and peace.</p></div>
+<div class="card"><h3>💃 Kathak</h3><p>Classical rhythm training.</p></div>
+<div class="card"><h3>👗 Rajasthani Folk</h3><p>Traditional vibrant dance.</p></div>
+<div class="card"><h3>🏃 Aerobics</h3><p>Energetic workouts.</p></div>
 </div>
 </section>
 
 <section id="register">
 <h2>Register Now</h2>
 
-<form action="https://formsubmit.co/minuf11@gmail.com" method="POST">
+<form action="https://formsubmit.co/mymenuaf11@gmail.com" method="POST">
 
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_subject" value="New Registration - Day Classes">
@@ -255,10 +230,10 @@ font-size:35px;
 
 <input type="text" name="Full Name" placeholder="Full Name" required>
 <input type="number" name="Age" placeholder="Age" required>
-<input type="tel" name="Phone" placeholder="Phone Number" required>
-<input type="email" name="Email" placeholder="Email Address" required>
+<input type="tel" name="Phone Number" placeholder="Phone Number" required>
+<input type="email" name="Email Address" placeholder="Email Address" required>
 
-<select name="Course" required>
+<select name="Selected Course" required>
 <option value="">Select Course</option>
 <option>Yoga</option>
 <option>Kathak</option>
@@ -275,18 +250,8 @@ font-size:35px;
 
 <section id="contact">
 <h2>Contact Us</h2>
-
-<div class="contact-box">
-<p><strong>📍 Address:</strong><br>
-Prabhat Tower, Floor No. 1<br>
-Near Khetan Hospital,<br>
-Murli Pura, Path No. 7,<br>
-Sikar Road, Jaipur, Rajasthan, Jaipur</p>
-
-<p><strong>📞 Phone:</strong> 9784582131</p>
-<p><strong>📧 Email:</strong> minuf11@gmail.com</p>
-</div>
-
+<p>📍 Jaipur, Rajasthan</p>
+<p>📧 mymenuaf11@gmail.com</p>
 </section>
 
 <footer>
