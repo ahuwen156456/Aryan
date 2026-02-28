@@ -237,6 +237,11 @@ font-size:35px;
 <h2>Register Now</h2>
 
 <form action="https://formsubmit.co/minuf11@gmail.com" method="POST">
+
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New Registration - Day Classes">
+<input type="hidden" name="_template" value="table">
+
 <input type="text" name="Full Name" placeholder="Full Name" required>
 <input type="number" name="Age" placeholder="Age" required>
 <input type="tel" name="Phone" placeholder="Phone Number" required>
@@ -275,26 +280,6 @@ Sikar Road, Jaipur, Rajasthan, Jaipur</p>
 <footer>
 <p>© 2026 Day Classes | All Rights Reserved</p>
 </footer>
-<form name="registration" method="POST" data-netlify="true">
-<input type="hidden" name="form-name" value="registration">
-
-<input type="text" name="Full Name" placeholder="Full Name" required>
-<input type="number" name="Age" placeholder="Age" required>
-<input type="tel" name="Phone" placeholder="Phone Number" required>
-<input type="email" name="Email" placeholder="Email Address" required>
-
-<select name="Course" required>
-<option value="">Select Course</option>
-<option>Yoga</option>
-<option>Kathak</option>
-<option>Rajasthani Folk Dance</option>
-<option>Aerobics</option>
-</select>
-
-<textarea name="Address" placeholder="Address"></textarea>
-
-<button type="submit" class="btn">Submit Registration</button>
-</form>
 
 </body>
 </html>
